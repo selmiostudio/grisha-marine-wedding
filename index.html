@@ -9,17 +9,22 @@
   <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
 </head>
 <body class="locked">
-  <div class="intro" id="intro" aria-label="Բացել հրավերը">
-    <button class="invitation-scene" id="openInvitation" type="button" aria-label="Բացել հարսանյաց հրավերը">
-      <img class="card-state card-closed" src="assets/images/02_invitation-card-closed-clean.png" alt="" aria-hidden="true">
-      <img class="card-state card-open" src="assets/images/03_invitation-card-open-clean.png" alt="" aria-hidden="true">
-      <span class="card-letter" aria-hidden="true"><span>ՍԻՐՈՎ ՀՐԱՎԻՐՈՒՄ ԵՆՔ</span><strong>Գրիշա<br>և<br>Մարինե</strong><small>20 · 11 · 2026</small></span>
-      <img class="card-bow" src="assets/images/04_satin-ribbon.png" alt="" aria-hidden="true">
-      <img class="card-seal" src="assets/images/05_wax-seal.png" alt="" aria-hidden="true">
+  <section class="intro" id="intro" aria-label="Հարսանյաց հրավերի առաջին էջ">
+    <picture class="intro-art" aria-hidden="true">
+      <source media="(max-width: 700px)" srcset="assets/images/wedding-intro-mobile.webp">
+      <img src="assets/images/wedding-intro-desktop.webp" alt="" fetchpriority="high">
+    </picture>
+    <div class="intro-shade" aria-hidden="true"></div>
+    <div class="intro-heading">
+      <p class="intro-eyebrow">ՀԱՐՍԱՆՅԱՑ ՀՐԱՎԵՐ</p>
+      <h1>Գրիշա <span>և</span> Մարինե</h1>
+      <p class="intro-date">20 · 11 · 2026</p>
+    </div>
+    <button class="intro-enter" id="openInvitation" type="button" aria-label="Բացել Գրիշայի և Մարինեի հարսանյաց հրավերը">
+      <span>Սեղմեք՝ հրավերը բացելու համար</span>
+      <span class="intro-enter-arrow" aria-hidden="true">↓</span>
     </button>
-    <p class="tap-hint" id="tapHint">Սեղմեք՝ հրավերը բացելու համար <span aria-hidden="true">↓</span></p>
-    <button class="continue-invitation" id="continueInvitation" type="button" hidden>Դիտել հրավերը <span aria-hidden="true">→</span></button>
-  </div>
+  </section>
 
   <main id="main" tabindex="-1">
     <button class="music-button" id="musicButton" type="button" aria-label="Միացնել երաժշտությունը" aria-pressed="false">♫</button>
