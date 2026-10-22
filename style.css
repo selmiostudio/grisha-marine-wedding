@@ -15,3 +15,24 @@
 .intro .tap-hint{position:relative;color:#5b4535;font-size:clamp(11px,2.7vw,14px);margin:8px 0 0;text-shadow:0 1px 8px #fff9}
 @media(min-width:760px){.invitation-scene{width:min(430px,calc(75dvh * .667))}.card-letter strong{font-size:27px}.card-letter>span{font-size:10px}.card-letter small{font-size:14px}}
 @media(max-height:590px){.invitation-scene{width:min(83vw,calc(69dvh * .667))}.intro{gap:0}.intro .tap-hint{margin:3px}}
+
+/* Two-stage opening: guests control when to continue */
+.intro .tap-hint{transition:opacity .4s ease,visibility .4s ease}
+.intro .tap-hint.hint-hidden{opacity:0;visibility:hidden}
+.continue-invitation{border:1px solid #ac8c6a;border-radius:999px;background:#92745a;color:#fffaf3;padding:14px 30px;min-height:50px;font-family:var(--sans);font-size:.88rem;letter-spacing:.02em;box-shadow:0 8px 22px #6b4b2b2e;opacity:0;transform:translateY(12px);transition:opacity .65s ease,transform .65s ease,background .2s ease;position:relative;z-index:3}
+.continue-invitation[hidden]{display:none!important}
+.continue-invitation.visible{opacity:1;transform:translateY(0)}
+.continue-invitation:hover{background:#74573f}
+.continue-invitation:focus-visible{outline:3px solid #61462c;outline-offset:4px}
+.intro.show-open .invitation-scene{cursor:default}
+@media(max-height:620px){.continue-invitation{padding:10px 22px;min-height:42px}}
+
+/* Final opening polish */
+.intro.show-open .tap-hint{opacity:0;visibility:hidden}
+.intro.show-open .card-letter{transition-delay:.15s}
+@media(max-width:600px){
+  .intro{padding:12px 10px 22px}
+  .invitation-scene{width:min(96vw,calc(73dvh * .667))}
+  .card-letter strong{font-size:clamp(17px,5.2vw,27px)}
+  .continue-invitation{max-width:calc(100vw - 32px)}
+}
