@@ -1,11 +1,7 @@
-Гриша и Марине — новая заставка, шампань / ivory.
+Grisha & Marine / corrected desktop + mobile intro
 
-1. Сохраните копию текущего репозитория.
-2. Загрузите index.html, style.css, script.js в корень репозитория.
-3. Загрузите два WebP в assets/images/.
-4. Сохраните существующие couple-01.jpg, couple-02.jpg, couple-03.jpg.
-5. Для музыки загрузите assets/audio/wedding-music.mp3.
-6. RSVP пока демонстрационный: ответы не отправляются.
-
-Нажатие на первый экран сразу запускает музыку (если MP3 есть)
-и плавно показывает основной сайт. Вся типографика на армянском — HTML/CSS.
+Upload index.html, style.css, script.js to repository root.
+Upload wedding-intro-desktop.webp and wedding-intro-mobile.webp to assets/images/.
+Keep existing photos and all other assets.
+Music: assets/audio/wedding-music.mp3 (must be provided separately).
+RSVP is not connected to a backend; no responses are stored.
