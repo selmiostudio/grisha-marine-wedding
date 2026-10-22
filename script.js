@@ -4,7 +4,7 @@ const audio=document.getElementById('music');
 const musicButton=document.getElementById('musicButton');
 let opened=false;
 function updateMusicButton(){const playing=!audio.paused;musicButton.setAttribute('aria-pressed',String(playing));musicButton.setAttribute('aria-label',playing?'Անջատել երաժշտությունը':'Միացնել երաժշտությունը');musicButton.textContent=playing?'♫':'♪';}
-openButton.addEventListener('click',()=>{if(opened)return;opened=true;intro.classList.add('opening');audio.play().catch(()=>{});updateMusicButton();setTimeout(()=>{document.body.classList.remove('locked');document.body.classList.add('revealed');intro.classList.add('finished');document.getElementById('main').focus({preventScroll:true});},1450);});
+openButton.addEventListener('click',()=>{if(opened)return;opened=true;intro.classList.add('opening');setTimeout(()=>intro.classList.add('show-open'),650);audio.play().catch(()=>{});updateMusicButton();setTimeout(()=>{document.body.classList.remove('locked');document.body.classList.add('revealed');intro.classList.add('finished');document.getElementById('main').focus({preventScroll:true});},2450);});
 musicButton.addEventListener('click',async()=>{if(audio.paused){try{await audio.play()}catch(e){alert('Երաժշտության ֆայլը դեռ ավելացված չէ։')}}else audio.pause();updateMusicButton();});
 audio.addEventListener('play',updateMusicButton);audio.addEventListener('pause',updateMusicButton);
 const weddingDate=new Date('2026-11-20T15:00:00+04:00').getTime();
