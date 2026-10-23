@@ -29,11 +29,30 @@ main{opacity:0;transition:opacity 1s}body.revealed main{opacity:1}.music-button{
   .intro-stage{max-height:100%;}
 }
 
-/* MOBILE ONLY — show the complete envelope without side cropping.
-   Scale the artwork and all text/button together, preserving alignment. */
+/* MOBILE ONLY — full uncropped envelope and seamless surrounding artwork.
+   Desktop remains unchanged. */
 @media (max-width:700px) {
+  .intro {
+    background: #ead4be;
+  }
+  /* Extend the same artwork behind the contained image instead of flat margins. */
+  .intro::before {
+    content: "";
+    position: absolute;
+    inset: -35px;
+    background: url('assets/images/wedding-intro-mobile.webp') center center / cover no-repeat;
+    filter: blur(24px);
+    opacity: .68;
+    pointer-events: none;
+  }
   .intro-stage {
-    transform: scale(.82);
-    transform-origin: center center;
+    transform: none;
+    width: min(100vw, calc(100dvh * 900 / 1600));
+    max-height: 100dvh;
+    aspect-ratio: 900 / 1600;
+    z-index: 1;
+  }
+  .intro-art img {
+    object-fit: contain;
   }
 }
