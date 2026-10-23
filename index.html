@@ -1,47 +1,387 @@
+
 <!doctype html>
 <html lang="hy">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#f8f5ef"><meta name="description" content="Գրիշա և Մարինե — հարսանյաց հրավեր, 20 նոյեմբերի 2026">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f5ef">
+  <meta name="description" content="Գրիշա և Մարինե — հարսանյաց հրավեր, 20 նոյեմբերի 2026">
+
   <title>Գրիշա և Մարինե | 20.11.2026</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Armenian:wght@400;500;600&family=Noto+Sans+Armenian:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+Armenian:wght@400;500;600;700&family=Noto+Sans+Armenian:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body class="locked">
-  <section class="intro" id="intro" aria-label="Հարսանյաց հրավերի առաջին էջ">
+
+  <!-- FIRST SCREEN — WEDDING ENVELOPE -->
+  <section
+    class="intro"
+    id="intro"
+    aria-label="Հարսանյաց հրավերի առաջին էջ"
+  >
+
     <picture class="intro-art" aria-hidden="true">
-      <source media="(max-width: 700px)" srcset="assets/images/wedding-intro-mobile.webp">
-      <img src="assets/images/wedding-intro-desktop.webp" alt="" fetchpriority="high">
+      <source
+        media="(max-width: 700px)"
+        srcset="assets/images/wedding-intro-mobile.webp"
+      >
+      <img
+        src="assets/images/wedding-intro-desktop.webp"
+        alt=""
+        fetchpriority="high"
+      >
     </picture>
+
     <div class="intro-shade" aria-hidden="true"></div>
+
     <div class="intro-heading">
-      <p class="intro-eyebrow">ՍԻՐՈՎ ՀՐԱՎԻՐՈՒՄ ԵՆՔ ՁԵԶ</p>
-      <h1>Գրիշա <span>և</span> Մարինե</h1>
-      <p class="intro-date">20 · 11 · 2026</p>
+
+      <p class="intro-eyebrow">
+        ՍԻՐՈՎ ՀՐԱՎԻՐՈՒՄ ԵՆՔ ՁԵԶ
+      </p>
+
+      <div class="intro-envelope-text">
+        <h1>
+          Գրիշա <span>և</span> Մարինե
+        </h1>
+
+        <p class="intro-date">
+          20 · 11 · 2026
+        </p>
+      </div>
+
     </div>
-    <button class="intro-enter" id="openInvitation" type="button" aria-label="Բացել Գրիշայի և Մարինեի հարսանյաց հրավերը">
+
+    <button
+      class="intro-enter"
+      id="openInvitation"
+      type="button"
+      aria-label="Բացել Գրիշայի և Մարինեի հարսանյաց հրավերը"
+    >
       <span>Սեղմեք՝ հրավերը բացելու համար</span>
       <span class="intro-enter-arrow" aria-hidden="true">↓</span>
     </button>
+
   </section>
 
+  <!-- MAIN WEDDING WEBSITE -->
   <main id="main" tabindex="-1">
-    <button class="music-button" id="musicButton" type="button" aria-label="Միացնել երաժշտությունը" aria-pressed="false">♫</button>
-    <audio id="music" src="assets/audio/wedding-music.mp3" loop preload="none"></audio>
+
+    <!-- MUSIC -->
+    <button
+      class="music-button"
+      id="musicButton"
+      type="button"
+      aria-label="Միացնել երաժշտությունը"
+      aria-pressed="false"
+    >♫</button>
+
+    <audio
+      id="music"
+      src="assets/audio/wedding-music.mp3"
+      loop
+      preload="none"
+    ></audio>
+
+    <!-- HERO -->
     <header class="hero" id="home">
-      <div class="hero-photo" role="img" aria-label="Գրիշան և Մարինեն"></div>
-      <div class="hero-copy"><span class="eyebrow">ՄԵՐ ՀԱՐՍԱՆԻՔԸ</span><h1>Գրիշա <span>և</span> Մարինե</h1><p class="hero-date">20 · 11 · 2026</p><div class="fine-rule"></div><a href="#invitation" class="scroll-link">Բացահայտել հրավերը ↓</a></div>
+
+      <div
+        class="hero-photo"
+        role="img"
+        aria-label="Գրիշան և Մարինեն"
+      ></div>
+
+      <div class="hero-copy">
+
+        <span class="eyebrow">ՄԵՐ ՀԱՐՍԱՆԻՔԸ</span>
+
+        <h1>
+          Գրիշա <span>և</span> Մարինե
+        </h1>
+
+        <p class="hero-date">20 · 11 · 2026</p>
+
+        <div class="fine-rule"></div>
+
+        <a href="#invitation" class="scroll-link">
+          Բացահայտել հրավերը ↓
+        </a>
+
+      </div>
     </header>
-    <section class="section welcome" id="invitation"><div class="section-text"><span class="eyebrow">ՍԻՐԵԼԻ՛ ՀՅՈՒՐԵՐ</span><h2>Սիրով հրավիրում ենք</h2><p>Սիրով հրավիրում ենք Ձեզ կիսելու մեր կյանքի ամենագեղեցիկ և հիշարժան օրը։</p><p>Ձեր ներկայությունը մեր ուրախությունը կդարձնի առավել լիարժեք։</p><span class="ornament">❧</span></div><img src="assets/images/couple-01.jpg" alt="Գրիշան և Մարինեն" loading="lazy"></section>
-    <section class="section countdown-section"><span class="eyebrow">ՄԻՆՉԵՎ ՄԵՐ ՀԱՐՍԱՆԻՔԸ</span><h2>Սպասում ենք այդ օրվան</h2><div class="countdown" id="countdown" aria-live="off"><div><strong id="days">—</strong><small>օր</small></div><div><strong id="hours">—</strong><small>ժամ</small></div><div><strong id="minutes">—</strong><small>րոպե</small></div><div><strong id="seconds">—</strong><small>վայրկյան</small></div></div></section>
-    <section class="section program" id="program"><span class="eyebrow">20 ՆՈՅԵՄԲԵՐԻ 2026</span><h2>Հարսանյաց օրվա ծրագիր</h2><div class="events">
-      <article class="event"><div class="event-icon">✧</div><p class="event-time">15:00</p><h3>Պսակադրության արարողություն</h3><p>Սուրբ Գայանե եկեղեցի</p><p class="muted">Արմավիրի մարզ, Էջմիածին</p><a class="pill" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Saint+Gayane+Church+Vagharshapat+Armenia">Ինչպես հասնել ↗</a></article>
-      <article class="event"><div class="event-icon">❦</div><p class="event-time">17:30</p><h3>Հարսանյաց հանդիսություն</h3><p>Morena White Restaurant Complex</p><p class="muted">Արարատի մարզ, Մասիս, Մխիթար Հերացու փողոց</p><a class="pill" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Morena+Restaurant+Complex+Mkhitar+Heratsi+Street+Masis+Armenia">Ինչպես հասնել ↗</a></article>
-    </div></section>
-    <section class="section gallery"><span class="eyebrow">ՄԵՐ ՊԱՏՄՈՒԹՅՈՒՆԸ</span><h2>Մեր պահերը</h2><div class="gallery-grid"><img src="assets/images/couple-01.jpg" alt="Զույգի լուսանկար 1" loading="lazy"><img src="assets/images/couple-02.jpg" alt="Զույգի լուսանկար 2" loading="lazy"><img src="assets/images/couple-03.jpg" alt="Զույգի լուսանկար 3" loading="lazy"></div></section>
-    <section class="section rsvp" id="rsvp"><span class="eyebrow">RSVP</span><h2>Մասնակցության հաստատում</h2><p>Խնդրում ենք հաստատել Ձեր մասնակցությունը մեր հարսանիքին։</p><form id="rsvpForm"><label for="guestName">Անուն Ազգանուն</label><input id="guestName" name="name" required maxlength="120" placeholder="Ձեր անունը և ազգանունը"><fieldset><legend>Կմասնակցե՞ք մեր հարսանիքին</legend><label class="choice"><input type="radio" name="attendance" value="yes" checked> Սիրով կմասնակցեմ</label><label class="choice"><input type="radio" name="attendance" value="no"> Ցավոք, չեմ կարող մասնակցել</label></fieldset><div id="guestCountGroup"><label for="guestCount">Հյուրերի քանակը</label><select id="guestCount" name="guests"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div><label for="guestMessage">Հաղորդագրություն (ըստ ցանկության)</label><textarea id="guestMessage" name="message" rows="3" maxlength="500" placeholder="Ձեր մաղթանքը"></textarea><button class="pill submit" type="submit">Ուղարկել →</button><p id="formStatus" role="status" class="form-status"></p></form></section>
-    <footer><span>Գրիշա <em>և</em> Մարինե</span><p>20 · 11 · 2026</p><small>Սիրով սպասում ենք Ձեզ ♡</small></footer>
+
+    <!-- INVITATION -->
+    <section class="section welcome" id="invitation">
+
+      <div class="section-text">
+
+        <span class="eyebrow">ՍԻՐԵԼԻ՛ ՀՅՈՒՐԵՐ</span>
+
+        <h2>Սիրով հրավիրում ենք</h2>
+
+        <p>
+          Սիրով հրավիրում ենք Ձեզ կիսելու մեր կյանքի
+          ամենագեղեցիկ և հիշարժան օրը։
+        </p>
+
+        <p>
+          Ձեր ներկայությունը մեր ուրախությունը
+          կդարձնի առավել լիարժեք։
+        </p>
+
+        <span class="ornament">❧</span>
+
+      </div>
+
+      <img
+        src="assets/images/couple-01.jpg"
+        alt="Գրիշան և Մարինեն"
+        loading="lazy"
+      >
+
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="section countdown-section">
+
+      <span class="eyebrow">ՄԻՆՉԵՎ ՄԵՐ ՀԱՐՍԱՆԻՔԸ</span>
+
+      <h2>Սպասում ենք այդ օրվան</h2>
+
+      <div class="countdown" id="countdown" aria-live="off">
+
+        <div>
+          <strong id="days">—</strong>
+          <small>օր</small>
+        </div>
+
+        <div>
+          <strong id="hours">—</strong>
+          <small>ժամ</small>
+        </div>
+
+        <div>
+          <strong id="minutes">—</strong>
+          <small>րոպե</small>
+        </div>
+
+        <div>
+          <strong id="seconds">—</strong>
+          <small>վայրկյան</small>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- WEDDING PROGRAM -->
+    <section class="section program" id="program">
+
+      <span class="eyebrow">20 ՆՈՅԵՄԲԵՐԻ 2026</span>
+
+      <h2>Հարսանյաց օրվա ծրագիր</h2>
+
+      <div class="events">
+
+        <article class="event">
+
+          <div class="event-icon">✧</div>
+
+          <p class="event-time">15:00</p>
+
+          <h3>Պսակադրության արարողություն</h3>
+
+          <p>Սուրբ Գայանե եկեղեցի</p>
+
+          <p class="muted">
+            Արմավիրի մարզ, Էջմիածին
+          </p>
+
+          <a
+            class="pill"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Saint+Gayane+Church+Vagharshapat+Armenia"
+          >
+            Ինչպես հասնել ↗
+          </a>
+
+        </article>
+
+        <article class="event">
+
+          <div class="event-icon">❦</div>
+
+          <p class="event-time">17:30</p>
+
+          <h3>Հարսանյաց հանդիսություն</h3>
+
+          <p>Morena White Restaurant Complex</p>
+
+          <p class="muted">
+            Արարատի մարզ, Մասիս,
+            Մխիթար Հերացու փողոց
+          </p>
+
+          <a
+            class="pill"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Morena+Restaurant+Complex+Mkhitar+Heratsi+Street+Masis+Armenia"
+          >
+            Ինչպես հասնել ↗
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery">
+
+      <span class="eyebrow">ՄԵՐ ՊԱՏՄՈՒԹՅՈՒՆԸ</span>
+
+      <h2>Մեր պահերը</h2>
+
+      <div class="gallery-grid">
+
+        <img
+          src="assets/images/couple-01.jpg"
+          alt="Զույգի լուսանկար 1"
+          loading="lazy"
+        >
+
+        <img
+          src="assets/images/couple-02.jpg"
+          alt="Զույգի լուսանկար 2"
+          loading="lazy"
+        >
+
+        <img
+          src="assets/images/couple-03.jpg"
+          alt="Զույգի լուսանկար 3"
+          loading="lazy"
+        >
+
+      </div>
+
+    </section>
+
+    <!-- RSVP -->
+    <section class="section rsvp" id="rsvp">
+
+      <span class="eyebrow">RSVP</span>
+
+      <h2>Մասնակցության հաստատում</h2>
+
+      <p>
+        Խնդրում ենք հաստատել Ձեր մասնակցությունը
+        մեր հարսանիքին։
+      </p>
+
+      <form id="rsvpForm">
+
+        <label for="guestName">Անուն Ազգանուն</label>
+
+        <input
+          id="guestName"
+          name="name"
+          required
+          maxlength="120"
+          placeholder="Ձեր անունը և ազգանունը"
+        >
+
+        <fieldset>
+
+          <legend>Կմասնակցե՞ք մեր հարսանիքին</legend>
+
+          <label class="choice">
+            <input
+              type="radio"
+              name="attendance"
+              value="yes"
+              checked
+            >
+            Սիրով կմասնակցեմ
+          </label>
+
+          <label class="choice">
+            <input
+              type="radio"
+              name="attendance"
+              value="no"
+            >
+            Ցավոք, չեմ կարող մասնակցել
+          </label>
+
+        </fieldset>
+
+        <div id="guestCountGroup">
+
+          <label for="guestCount">Հյուրերի քանակը</label>
+
+          <select id="guestCount" name="guests">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+          </select>
+
+        </div>
+
+        <label for="guestMessage">
+          Հաղորդագրություն (ըստ ցանկության)
+        </label>
+
+        <textarea
+          id="guestMessage"
+          name="message"
+          rows="3"
+          maxlength="500"
+          placeholder="Ձեր մաղթանքը"
+        ></textarea>
+
+        <button class="pill submit" type="submit">
+          Ուղարկել →
+        </button>
+
+        <p
+          id="formStatus"
+          role="status"
+          class="form-status"
+        ></p>
+
+      </form>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+      <span>Գրիշա <em>և</em> Մարինե</span>
+
+      <p>20 · 11 · 2026</p>
+
+      <small>Սիրով սպասում ենք Ձեզ ♡</small>
+
+    </footer>
+
   </main>
+
 </body>
 </html>
