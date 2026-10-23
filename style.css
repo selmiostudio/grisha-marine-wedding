@@ -33,11 +33,11 @@
 /* Keep the original photograph visible, without a large beige overlay. */
 .intro-shade { pointer-events: none; background: transparent; }
 
-/* The lettering is placed ON the paper flap, above the satin ribbon. */
+/* Separate vertical positions: invitation line high, names lower, bold date below. */
 .intro-heading {
   position: absolute;
   z-index: 2;
-  top: 28%;
+  top: 26%;
   left: 50%;
   right: auto;
   width: min(39vw, 580px);
@@ -57,7 +57,7 @@
   letter-spacing: .035em;
 }
 .intro-heading h1 {
-  margin: 0;
+  margin: clamp(40px, 6.2vh, 72px) 0 0;
   font-family: var(--serif);
   font-size: clamp(25px, 2.6vw, 42px);
   font-weight: 500;
@@ -65,8 +65,8 @@
 }
 .intro-heading h1 span { color: #aa8762; font-weight: 400; }
 .intro-date {
-  margin: 7px 0 0;
-  font: 15px/1.4 Georgia, serif;
+  margin: 8px 0 0;
+  font: 700 clamp(19px, 1.65vw, 26px)/1.4 Georgia, serif;
   letter-spacing: .19em;
 }
 .intro-enter {
