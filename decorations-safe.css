@@ -1,0 +1,87 @@
+/* GRISHA & MARINE — optional decorative layer only.
+   Keep your existing style.css completely unchanged.
+   To disable, remove the decorations-safe.css <link> from index.html.
+   Images expected in assets/images/ as named below. */
+
+/* Decorations are limited to these sections, never intro or hero. */
+.welcome, .countdown-section, .program, .gallery, .rsvp {
+  position: relative;
+  isolation: isolate;
+}
+.welcome::before, .countdown-section::before, .program::before,
+.gallery::before, .rsvp::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: .42;
+}
+/* White floral arrangement: welcome */
+.welcome::before {
+  width: clamp(115px, 23vw, 310px);
+  height: clamp(150px, 30vw, 390px);
+  left: 0;
+  bottom: 0;
+  background-image: url('assets/images/flowers-left.png');
+  background-position: left bottom;
+}
+/* Gold foliage: countdown */
+.countdown-section::before {
+  width: clamp(105px, 19vw, 260px);
+  height: clamp(155px, 27vw, 330px);
+  right: 0;
+  top: 0;
+  background-image: url('assets/images/gold-branch.png');
+  background-position: right top;
+  opacity: .26;
+  animation: wedding-branch 9s ease-in-out infinite alternate;
+  transform-origin: right top;
+}
+/* Smaller white flowers: program */
+.program::before {
+  width: clamp(105px, 19vw, 230px);
+  height: clamp(125px, 24vw, 285px);
+  left: 0;
+  top: 0;
+  background-image: url('assets/images/flowers-right.png');
+  background-position: left top;
+  opacity: .30;
+}
+/* Petals: gallery, kept away from image faces by remaining behind content */
+.gallery::before {
+  width: clamp(110px, 22vw, 260px);
+  height: clamp(145px, 29vw, 340px);
+  right: 0;
+  top: 0;
+  background-image: url('assets/images/petals.png');
+  background-position: right top;
+  opacity: .24;
+  animation: wedding-petals 12s ease-in-out infinite alternate;
+}
+/* White flowers: RSVP */
+.rsvp::before {
+  width: clamp(115px, 24vw, 260px);
+  height: clamp(150px, 30vw, 330px);
+  right: 0;
+  bottom: 0;
+  background-image: url('assets/images/flowers-right.png');
+  background-position: right bottom;
+  opacity: .22;
+}
+@keyframes wedding-branch { from {transform:rotate(-2deg)} to {transform:rotate(2deg)} }
+@keyframes wedding-petals { from {transform:translateY(-6px)} to {transform:translateY(9px)} }
+@media (max-width:759px) {
+  .welcome::before, .countdown-section::before, .program::before,
+  .gallery::before, .rsvp::before {
+    width: 105px;
+    height: 155px;
+    opacity: .16;
+  }
+  .countdown-section::before { opacity: .13; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .countdown-section::before, .gallery::before { animation:none; }
+}
