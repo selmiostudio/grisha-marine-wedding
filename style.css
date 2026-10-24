@@ -183,22 +183,22 @@ main{opacity:0;transition:opacity 1s}body.revealed main{opacity:1}.music-button{
 /* Desktop */
 @media (min-width: 760px) {
   .hero-copy .eyebrow {
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .hero-date {
-    font-size: 21px;
+    font-size: 23px;
   }
 }
 
 /* Mobile */
 @media (max-width: 759px) {
   .hero-copy .eyebrow {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .hero-date {
-    font-size: 19px;
+    font-size: 20px;
   }
 }
 
