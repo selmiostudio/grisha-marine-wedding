@@ -94,3 +94,19 @@
   width: clamp(220px, 34vw, 460px);
   height: clamp(230px, 36vw, 480px);
   left: clamp(-95px, -6vw, -25px);
+   
+/* WELCOME — flowers aligned with the screen edge */
+/* Desktop only: original website layout remains unchanged */
+
+@media (min-width: 760px) {
+  .welcome::before {
+    left: max(
+      -120px,
+      calc((1080px - 100vw) / 2)
+    ) !important;
+    right: auto !important;
+    bottom: 0 !important;
+    transform: none !important;
+  }
+}
+
