@@ -203,7 +203,7 @@
     background-position: right bottom !important;
 
     opacity: 0.42 !important;
-    transform: translateX(0) !important;
+    transform: scaleX(-1) !important;
   }
 }
 
