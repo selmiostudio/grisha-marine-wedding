@@ -178,3 +178,27 @@ main{opacity:0;transition:opacity 1s}body.revealed main{opacity:1}.music-button{
 .hero .scroll-link {
   display: none;
 }
+
+/* FINAL HERO TYPOGRAPHY ADJUSTMENT */
+/* Desktop */
+@media (min-width: 760px) {
+  .hero-copy .eyebrow {
+    font-size: 17px;
+  }
+
+  .hero-date {
+    font-size: 21px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 759px) {
+  .hero-copy .eyebrow {
+    font-size: 15px;
+  }
+
+  .hero-date {
+    font-size: 19px;
+  }
+}
+
