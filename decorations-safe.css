@@ -146,4 +146,44 @@
   content: none !important;
 }
 
+/* RSVP — large flowers from the right screen edge */
+/* Desktop and mobile */
+
+@media (min-width: 760px) {
+  section.rsvp::before {
+    right: calc(50% - 50vw) !important;
+    left: auto !important;
+    bottom: 0 !important;
+    top: auto !important;
+
+    width: clamp(340px, 35vw, 540px) !important;
+    height: clamp(400px, 42vw, 600px) !important;
+
+    background-position: right bottom !important;
+    background-size: contain !important;
+    opacity: 0.34 !important;
+
+    transform: translateX(30px) !important;
+  }
+}
+
+@media (max-width: 759px) {
+  section.rsvp::before {
+    right: -22px !important;
+    left: auto !important;
+    bottom: 0 !important;
+    top: auto !important;
+
+    width: 190px !important;
+    height: 250px !important;
+
+    background-position: right bottom !important;
+    background-size: contain !important;
+    opacity: 0.20 !important;
+
+    transform: none !important;
+  }
+}
+
+
 
