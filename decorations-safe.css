@@ -225,28 +225,32 @@
   }
 }
 
-/* RSVP — mobile bouquet correction only */
+
+/* RSVP — final mobile bouquet positioning */
 
 @media (max-width: 759px) {
   section.rsvp::before {
     content: "" !important;
-
     position: absolute !important;
+
     left: auto !important;
     right: calc(50% - 50vw) !important;
     top: auto !important;
     bottom: 0 !important;
 
-    width: 220px !important;
-    height: 260px !important;
+    width: 280px !important;
+    height: 310px !important;
 
     background-image: url("assets/images/flowers-right.png") !important;
     background-repeat: no-repeat !important;
     background-size: contain !important;
     background-position: right bottom !important;
 
-    opacity: 0.25 !important;
+    opacity: 0.30 !important;
+
     transform: scaleX(-1) !important;
+    transform-origin: center center !important;
+
     pointer-events: none !important;
   }
 }
