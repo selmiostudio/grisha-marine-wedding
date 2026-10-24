@@ -138,3 +138,12 @@
   }
 }
 
+/* GALLERY — remove decorative petals */
+/* Desktop and mobile */
+
+.gallery::before {
+  display: none !important;
+  content: none !important;
+}
+
+
