@@ -106,3 +106,35 @@
 @media (prefers-reduced-motion: reduce) {
   .countdown-section::before, .gallery::before { animation: none; }
 }
+
+/* WEDDING PROGRAM — floral decoration */
+/* Only changes the program flowers */
+
+@media (min-width: 760px) {
+  .program::before {
+    left: calc((100% - 100vw) / 2) !important;
+    right: auto !important;
+    top: 25px !important;
+    width: clamp(210px, 23vw, 340px) !important;
+    height: 340px !important;
+    background-position: left top !important;
+    background-size: contain !important;
+    opacity: 0.32 !important;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 759px) {
+  .program::before {
+    left: -22px !important;
+    right: auto !important;
+    top: 20px !important;
+    width: 130px !important;
+    height: 180px !important;
+    background-position: left top !important;
+    background-size: contain !important;
+    opacity: 0.20 !important;
+    transform: none !important;
+  }
+}
+
