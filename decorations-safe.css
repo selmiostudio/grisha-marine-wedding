@@ -94,22 +94,3 @@
   width: clamp(220px, 34vw, 460px);
   height: clamp(230px, 36vw, 480px);
   left: clamp(-95px, -6vw, -25px);
-  bottom: -18px;
-  top: auto;
-  right: auto;
-  background-size: contain;
-  background-position: left bottom;
-  opacity: .32;
-  -webkit-mask-image: linear-gradient(to top right, #000 15%, #000 44%, transparent 88%);
-  mask-image: linear-gradient(to top right, #000 15%, #000 44%, transparent 88%);
-  filter: drop-shadow(0 12px 16px rgba(119,95,72,.07));
-}
-@media (max-width:759px) {
-  .welcome::before {
-    width: min(58vw, 245px);
-    height: min(62vw, 260px);
-    left: -35px;
-    bottom: -10px;
-    opacity: .22;
-  }
-}
