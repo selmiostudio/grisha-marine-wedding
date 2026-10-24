@@ -186,4 +186,43 @@
 }
 
 
+/* RSVP — bouquet from the bottom-right screen corner */
+
+@media (min-width: 760px) {
+  section.rsvp::before {
+    left: auto !important;
+    right: calc(50% - 50vw) !important;
+    top: auto !important;
+    bottom: 0 !important;
+
+    width: 520px !important;
+    height: 520px !important;
+
+    background-image: url("assets/images/flowers-right.png") !important;
+    background-size: contain !important;
+    background-position: right bottom !important;
+
+    opacity: 0.42 !important;
+    transform: translateX(0) !important;
+  }
+}
+
+@media (max-width: 759px) {
+  section.rsvp::before {
+    left: auto !important;
+    right: calc(50% - 50vw) !important;
+    top: auto !important;
+    bottom: 0 !important;
+
+    width: min(48vw, 220px) !important;
+    height: 250px !important;
+
+    background-position: right bottom !important;
+    background-size: contain !important;
+
+    opacity: 0.25 !important;
+    transform: none !important;
+  }
+}
+
 
